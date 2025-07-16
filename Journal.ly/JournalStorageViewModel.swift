@@ -35,4 +35,10 @@ class JournalStorageViewModel: ObservableObject {
         let strippedDate = stripTime(from: date)
         return journalEntries[strippedDate] ?? []
     }
+    func clearAllMessages() {
+        journalEntries = [:]
+        UserDefaults.standard.removeObject(forKey: "journalEntries")
+        save()
+    }
+
 }

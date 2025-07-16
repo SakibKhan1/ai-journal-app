@@ -30,9 +30,8 @@ struct ChatView: View {
                     } else if selectedTab == "calendar" {
                         CalendarPage(storage: storage)
                     } else if selectedTab == "settings" {
-                        Text("Settings Page (Coming Soon)")
-                            .font(.title2)
-                            .padding()
+                        
+                            SettingsView()
                     }
 
                     BottomHUDBar(selectedTab: $selectedTab)
