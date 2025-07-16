@@ -20,7 +20,7 @@ struct JournalDetailView: View {
                 }
 
                 //JUST FOR TESTING, REMOVE FOR FINAL DEPLOYMENT *reminder* 
-                Button("Add Entry (for testing)") {
+                Button("Add Entry (this is only for testing purposes to show in demo)") {
                     messages.append(ChatMessage(role: .user, content: "Test entry at \(Date())"))
                 }
                 .padding(.bottom)
@@ -30,7 +30,7 @@ struct JournalDetailView: View {
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Done") {
-                        onSave?(messages) // Save the updated messages back to CalendarPage
+                        onSave?(messages)
                         dismiss()
                     }
                 }
