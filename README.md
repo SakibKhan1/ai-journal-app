@@ -2,7 +2,7 @@
 
 **Journal.ly** is a SwiftUI iOS app designed to help users reflect and document their day through a clean, calming interface powered by AI. The app allows users to record thoughts, chat with a therapist-like assistant, and browse their past journal entries via an intuitive calendar interface.
 
-Built for users who want private, intelligent journaling without cloud dependency — all data is stored locally.
+Built for users who want private, intelligent journaling without cloud dependency as all data is stored locally.
 
 ---
 
