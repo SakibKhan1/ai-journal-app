@@ -50,4 +50,4 @@ The following **required** functionality is completed:
 
 ## 📱 App Demo
 
-![App Demo](App_Demo.gif)
+<img src="App_Demo.gif" width="300"/>
