@@ -208,19 +208,26 @@ struct ChatView: View {
         }
     }
 
-    func loadAPIKey() -> String {
+    func getOpenAIKey() -> String? {
         guard let path = Bundle.main.path(forResource: "Secrets", ofType: "plist"),
               let dict = NSDictionary(contentsOfFile: path),
-              let key = dict["OpenAI_API_Key"] as? String else {
-            fatalError("API Key not found in Secrets.plist")
+              let apiKey = dict["OpenAI_API_Key"] as? String else {
+            return nil
         }
-        return key
+        return apiKey
+        
     }
+    
+
 
     func callGPT(with history: [ChatMessage], completion: @escaping (String?) -> Void) {
         guard let url = URL(string: "https://api.openai.com/v1/chat/completions") else { return }
 
-        let apiKey = loadAPIKey()
+        guard let apiKey = getOpenAIKey() else {
+            print("Missing or invalid API key")
+            completion(nil)
+            return
+        }
 
         let systemPrompt: [String: String] = [
             "role": "system",
