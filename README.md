@@ -50,5 +50,4 @@ The following **required** functionality is completed:
 
 ## 📱 App Demo
 
-![App Demo](App_Demo?raw=true)
-
+![App Demo](App_Demo.gif)
