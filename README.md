@@ -48,3 +48,7 @@ The following **required** functionality is completed:
 
 > This app is local-only and designed with privacy in mind. No journal data leaves the user’s device.
 
+## 📱 App Demo
+
+![App Demo](App_Demo?raw=true)
+
