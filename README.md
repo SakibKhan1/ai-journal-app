@@ -48,6 +48,9 @@ The following **required** functionality is completed:
 
 > This app is local-only and designed with privacy in mind. No journal data leaves the user’s device.
 
+
 ## 📱 App Demo
+
+> ⚠️ The demo GIF may take up to **20 seconds** to load due to file size, thank you for your patience!
 
 <img src="App_Demo.gif" width="400"/>
