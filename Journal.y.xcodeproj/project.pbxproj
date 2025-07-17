@@ -45,6 +45,11 @@
 			path = Journal.yUITests;
 			sourceTree = "<group>";
 		};
+		F61C20CC2E2862C000F4B576 /* Media */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Media;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +80,7 @@
 		F60664992E26F2EE00D35A8F = {
 			isa = PBXGroup;
 			children = (
+				F61C20CC2E2862C000F4B576 /* Media */,
 				F60664A42E26F2EE00D35A8F /* Journal.ly */,
 				F60664B22E26F2EF00D35A8F /* Journal.yTests */,
 				F60664BC2E26F2EF00D35A8F /* Journal.yUITests */,
@@ -109,6 +115,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				F60664A42E26F2EE00D35A8F /* Journal.ly */,
+				F61C20CC2E2862C000F4B576 /* Media */,
 			);
 			name = Journal.y;
 			packageProductDependencies = (
